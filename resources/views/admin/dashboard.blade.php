@@ -24,9 +24,9 @@
                             @include('partials.admin.dashboard.tab_header', ['id' => 'entrance-pages', 'icon' => 'log-in'])
                             @include('partials.admin.dashboard.tab_header', ['id' => 'exit-pages', 'icon' => 'log-out'])
                             @include('partials.admin.dashboard.tab_header', ['id' => 'time-pages', 'icon' => 'clock'])
-                            @include('partials.admin.dashboard.tab_header', ['id' => 'traffic-sources', 'icon' => 'square'])
+                            {{-- @include('partials.admin.dashboard.tab_header', ['id' => 'traffic-sources', 'icon' => 'square'])
                             @include('partials.admin.dashboard.tab_header', ['id' => 'browsers', 'icon' => 'chrome'])
-                            @include('partials.admin.dashboard.tab_header', ['id' => 'os', 'icon' => 'hard-drive'])
+                            @include('partials.admin.dashboard.tab_header', ['id' => 'os', 'icon' => 'hard-drive']) --}}
                         </ul>
                     </div>
                     <div id="tab-container">
@@ -35,9 +35,9 @@
                         @include('partials.admin.dashboard.tab_box', ['id' => 'entrance-pages', 'data' => $statistics['landings'], 'key' => 'path', 'value' => 'visits'])
                         @include('partials.admin.dashboard.tab_box', ['id' => 'exit-pages', 'data' => $statistics['exits'], 'key' => 'path', 'value' => 'visits'])
                         @include('partials.admin.dashboard.tab_box', ['id' => 'time-pages', 'data' => $statistics['times'], 'key' => 'path', 'value' => 'time', 'isDate' => true])
-                        @include('partials.admin.dashboard.tab_box', ['id' => 'traffic-sources', 'data' => $statistics['sources'], 'key' => 'path', 'value' => 'visits'])
+                        {{-- @include('partials.admin.dashboard.tab_box', ['id' => 'traffic-sources', 'data' => $statistics['sources'], 'key' => 'path', 'value' => 'visits'])
                         @include('partials.admin.dashboard.tab_box', ['id' => 'browsers', 'data' => $statistics['browsers'], 'key' => 'browser', 'value' => 'visits'])
-                        @include('partials.admin.dashboard.tab_box', ['id' => 'os', 'data' => $statistics['os'], 'key' => 'os', 'value' => 'visits'])
+                        @include('partials.admin.dashboard.tab_box', ['id' => 'os', 'data' => $statistics['os'], 'key' => 'os', 'value' => 'visits']) --}}
                     </div>
                 </div>
                 <div class="column is-6">
