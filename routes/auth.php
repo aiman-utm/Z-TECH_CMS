@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\NewPasswordController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
+
 use Illuminate\Support\Facades\Route;
 
 Route::get('login', ['as' => 'auth.login', 'uses' => 'LoginController@showLoginForm']);

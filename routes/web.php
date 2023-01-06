@@ -10,6 +10,7 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', ['as' => 'root', 'uses' => 'PageController@getIndex']);
 Route::get('a/{aSlug}', ['as' => 'article', 'uses' => 'PageController@getArticle']);

@@ -35,8 +35,15 @@
     @hasSection('canonical')<link rel="canonical" href="@yield('canonical')">@endif
     <script src="{{ asset(mix('dist/js/app.js')) }}"></script>
     @if (env('APP_ENV') !== 'local' && config('settings.analytics_id') !== null)
-        <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('settings.analytics_id') }}"></script>
-        <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', '{{ config('settings.analytics_id') }}', {'anonymize_ip': true});</script>
+       <!-- Google tag (gtag.js) -->
+       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-252902653-1"></script>
+       <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+
+       gtag('config', {{ config('settings.analytics_id') }});
+       </script>
     @endif
 </head>
 <body>

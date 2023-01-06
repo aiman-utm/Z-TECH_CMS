@@ -41,7 +41,7 @@ class DashboardController extends AdminController
      */
     public function getIndex()
     {
-        if (strpos(env('GOOGLE_ANALYTICS_CREDENTIAL_PATH'), '*') === false) {
+        if (strpos(env('GOOGLE_ANALYTICS_CREDENTIAL_PATH'), 'service-account-credentials') == true) {
             return view('admin.dashboard', [
                 'statistics' => $this->getStatistics(),
                 'today' => $this->getToday()
