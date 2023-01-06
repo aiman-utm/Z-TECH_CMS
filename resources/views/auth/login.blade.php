@@ -38,6 +38,13 @@
                                 <input type="hidden" name="_token" id="csrf-token" value="{{ csrf_token() }}" />
                                 <button type="submit" class="button is-info is-fullwidth is-large">{{ __('auth.login.submit') }}</button>
                             </div>
+                            <div class="control">
+                                @if (Route::has('password.request'))
+                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                        {{ __('Forgot Your Password?') }}
+                                    </a>
+                                @endif
+                            </div>
                         </form>
                     </div>
                 </div>
