@@ -4,6 +4,7 @@
             <span class="icon is-large">{!! icon($icon) !!}</span>
             <span>{{ $value }}</span>
         </p>
-        <p class="subtitle">{{ __('admin.fields.dashboard.' . $key) }}</p>
+        {{-- <p class="subtitle">{{ __('admin.fields.dashboard.' . $key) }}</p> --}}
+        <p class="subtitle">{{ __( $key) }}</p>
     </article>
 </div>

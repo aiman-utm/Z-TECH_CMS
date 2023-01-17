@@ -5,6 +5,10 @@ namespace App\Http\Controllers\Admin;
 use App\Base\Controllers\AdminController;
 use Analytics;
 use App\Base\Services\AlexaService;
+use App\Models\Article;
+use App\Models\Category;
+use App\Models\Page;
+use App\Models\User;
 use Carbon\Carbon;
 use Spatie\Analytics\Period;
 
@@ -41,14 +45,19 @@ class DashboardController extends AdminController
      */
     public function getIndex()
     {
-        if (strpos(env('GOOGLE_ANALYTICS_CREDENTIAL_PATH'), 'service-account-credentials') == true) {
-            return view('admin.dashboard', [
-                'statistics' => $this->getStatistics(),
-                'today' => $this->getToday()
-            ]);
-        }
-        $this->flashRaw(__('admin.invalid'));
-        return redirect(route('admin.user.index'));
+        // if (strpos(env('GOOGLE_ANALYTICS_CREDENTIAL_PATH'), 'service-account-credentials') == true) {
+        //     return view('admin.dashboard', [
+        //         'statistics' => $this->getStatistics(),
+        //         'today' => $this->getToday()
+        //     ]);
+        // }
+        // $this->flashRaw(__('admin.invalid'));
+        // return redirect(route('admin.user.index'));
+        $totalArticles = Article::count();
+        $totalCategory = Category::count();
+        $totalPage = Page::count();
+        $totalAllUser = User::count(); 
+        return view('admin.dashboard',compact('totalArticles','totalCategory','totalPage','totalAllUser'));
     }
 
     /**
