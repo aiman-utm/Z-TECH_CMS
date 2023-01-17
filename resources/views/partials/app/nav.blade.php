@@ -36,5 +36,12 @@
                 @endforeach
             </div>
         </div>
+        <div class="navbar-brand">
+            <div class="navbar-start">
+                <a class="navbar-item" href="{{ route('auth.login') }}">
+                    Login
+                </a>
+            </div>
+        </div>
     </div>
 </nav>
