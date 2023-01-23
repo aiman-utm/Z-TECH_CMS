@@ -10,6 +10,24 @@ use App\Models\Page;
 
 class PageController extends Controller
 {
+    public function getHome()
+    {
+        return view('app.mainhome', [
+            'title' => getTitle(),
+            'description' => getDescription(),
+            'articles' => Article::published()->paginate(4)
+        ]);
+    }
+
+    public function getAboutUs()
+    {
+        return view('app.aboutus', [
+            'title' => getTitle(),
+            'description' => getDescription(),
+            'articles' => Article::published()->paginate(4)
+        ]);
+    }
+
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */

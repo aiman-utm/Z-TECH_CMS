@@ -51,5 +51,7 @@
 @yield('content')
 @include('partials.app.footer')
 @hasSection('scripts')@yield('scripts')@endif
+
+
 </body>
 </html>
