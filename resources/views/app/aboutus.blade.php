@@ -6,7 +6,7 @@
     <div class="inner">
       <h3 class="masthead-brand">Z-Tech</h3>
       <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="{{ route('root') }}">Home</a>
         <a class="nav-link active" href="{{ url('aboutus') }}">About us</a>
       </nav>
     </div>
@@ -34,13 +34,14 @@
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <img class="rounded-circle" src="{{ asset('i\aboutimg\AIMAN.jpg') }}" alt="Generic placeholder image" width="140" height="140">
           <h2>Muhammad Aiman</h2>
-          <p>I am a developer for the Z-Tech Content Management System (CMS). I am a 3rd year student of UTM, majoring in Bachelor of Computer Science (Bioinformatics).
+          <p>My full name is Muhammad Aiman Bin Abdul Razak. I am a 3rd year student of UTM, majoring in Bachelor of Computer Science (Bioinformatics).
+            I am a developer for the Z-Tech Content Management System (CMS).
             Creating a fully fledged system has increased my understanding of the inner workings of a system in general.</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4 center">
-          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Muhammad Aiman Bin Abdul Razak" width="140" height="140">
           <h2>Lee Jia Yee</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
         </div><!-- /.col-lg-4 -->
@@ -59,7 +60,7 @@
                           develop an application that is user-friendly and interactive for all users in every generation.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-fluid mx-auto" src="{{ asset('i\aboutimg\UTM.jpg') }}" alt="Universiti Teknologi Malaysia (UTM)">
         </div>
       </div>
 
@@ -71,7 +72,7 @@
           <p class="lead">We provide users with a system that can manage information in an orderly manner without needing to learn the fundamentals of coding.</p>
         </div>
         <div class="col-md-5 order-md-1">
-          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-fluid mx-auto" src="{{ asset('i\aboutimg\STUDENT.jpg') }}" alt="Student doing coding">
         </div>
       </div>
 
@@ -84,7 +85,7 @@
                           More specifically, we are able to categorize articles to their categories, as well as create pages with just the touch of a button.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-fluid mx-auto" src="{{ asset('i\aboutimg\CMS.jpg') }}" alt="Content Management System (CMS)">
         </div>
       </div>
 
@@ -94,12 +95,10 @@
 
     </div><!-- /.container -->
 
-
     <!-- FOOTER -->
-    <footer class="container">
-      <p class="float-right"><a href="#">Back to top</a></p>
-      <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <footer class="container" style="overflow: hidden">
+      <p class="float-right"><a href="{{ route('root') }}">Back to Home</a></p>
+      <p>&copy; 2023 Z-Tech</p>
     </footer>
   </main>
-
 @endsection

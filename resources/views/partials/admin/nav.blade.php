@@ -1,7 +1,7 @@
 <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
     <div class="container is-fluid">
         <div class="navbar-brand">
-            <a class="navbar-item" href="{{ route('root') }}">
+            <a class="navbar-item" href="{{ url('articles') }}">
                 <span class="icon">{!! icon('home') !!}</span>
                 <span>{{ config('settings.site_title') }}</span>
             </a>
@@ -26,6 +26,19 @@
         </div>
         <div class="navbar-end is-hidden-mobile">
             @include('partials.admin.nav.logout')
+        </div>
+    </div>
+    <div class="navbar-brand">
+        <div class="navbar-start">
+            <a class="navbar-item" href="{{ route('auth.login') }}">
+                Login
+            </a>
+            <a class="navbar-item" href="{{ route('register') }}">
+                Register
+            </a>
+            <a class="navbar-item" href="{{ route('root') }}">
+                Home
+            </a>
         </div>
     </div>
 </nav>

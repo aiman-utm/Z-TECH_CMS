@@ -16,7 +16,7 @@
       <h1 class="cover-heading">Effortlessly organize and publish your content with our CMS</h1>
       <p class="lead">Z-Tech Content Management System (CMS) is a system that simplifies the process of managing, editing and publishing digital content on a website, making it easy for non-technical users to update and maintain the website without the need for manual coding or web developer assistance</p>
       <p class="lead">
-        <a href="#" class="btn btn-lg btn-secondary">Go to CMS</a>
+        <a href="{{ url('articles') }}" class="btn btn-lg btn-secondary">Go to CMS</a>
       </p>
     </main>
 

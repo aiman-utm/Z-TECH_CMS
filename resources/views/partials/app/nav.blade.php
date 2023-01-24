@@ -1,7 +1,7 @@
 <nav class="navbar is-light">
     <div class="container">
         <div class="navbar-brand">
-            <a class="navbar-item" href="{{ route('root') }}">
+            <a class="navbar-item" href="{{ url('articles') }}">
                 <img src="{{ asset(config('settings.logo')) }}" alt="{{ config('settings.site_title') }}">
             </a>
             <div id="toggle-menu" class="navbar-burger burger">
@@ -43,6 +43,9 @@
                 </a>
                 <a class="navbar-item" href="{{ route('register') }}">
                     Register
+                </a>
+                <a class="navbar-item" href="{{ route('root') }}">
+                    Home
                 </a>
             </div>
         </div>
