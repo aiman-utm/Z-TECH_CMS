@@ -29,9 +29,11 @@
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Chang Ming Xuan</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <img class="rounded-circle" src="{{ asset('i\aboutimg\CHANG.jpeg') }}" alt="Generic placeholder image" width="140" height="140">
+          <h2>Chang Min Xuan</h2>
+          <p>Hi, my name is Chang Min Xuan. I am a third year student in UTM. The course that I am currently studying is the Bachelor of Computer Science (Bioinformatics).
+            I am the product owner of this Z-Tech Content Management System (CMS).
+            Managing the product backlog ideas and prioritizing the strategy for our business are the key activities for our project.</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="rounded-circle" src="{{ asset('i\aboutimg\AIMAN.jpg') }}" alt="Generic placeholder image" width="140" height="140">
