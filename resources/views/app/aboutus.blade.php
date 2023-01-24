@@ -24,9 +24,12 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Sayang Eliyana</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <img class="rounded-circle" src="{{ asset('i\aboutimg\ELYIANA.jpg') }}" alt="Generic placeholder image" width="140" height="140">
+          <h2>Sayang Elyiana</h2>
+          <p>My name is Sayang Elyiana Amiera binti Helmey. I am 3rd year UTM student who major in Bachelor of Computer Science (Bioinformatics).
+            I am the Scrum Master for the Z-Tech Content Management System (CMS). I always keep track of group progress and be motivated to ensure 
+            Z-tech achieve the goals.
+          </p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
@@ -34,16 +37,17 @@
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="rounded-circle" src="{{ asset('i\aboutimg\AIMAN.jpg') }}" alt="Generic placeholder image" width="140" height="140">
+          <img class="rounded-circle" src="{{ asset('i\aboutimg\AIMAN.jpg') }}" alt="Muhammad Aiman Bin Abdul Razak" width="140" height="140">
           <h2>Muhammad Aiman</h2>
           <p>My full name is Muhammad Aiman Bin Abdul Razak. I am a 3rd year student of UTM, majoring in Bachelor of Computer Science (Bioinformatics).
             I am a developer for the Z-Tech Content Management System (CMS).
             Creating a fully fledged system has increased my understanding of the inner workings of a system in general.</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4 center">
-          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Muhammad Aiman Bin Abdul Razak" width="140" height="140">
+          <img class="rounded-circle" src="{{ asset('i\aboutimg\JIAYEE.jpg') }}" alt="Lee Jia Yee" width="140" height="140">
           <h2>Lee Jia Yee</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p>My name is Lee Jia Yee. I am a UTM 3rd year Bioinformatics student. As a developer for Z=Tech Content Management System (CMS), 
+            I usually assist in developing system and publish our system development codings to internet via cPANEL.</p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
