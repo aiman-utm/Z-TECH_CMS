@@ -22,7 +22,7 @@
 
     <footer class="mastfoot mt-auto">
       <div class="inner">
-        <p>Z-Tech</p>
+        <p>&copy; 2023 Z-Tech</p>
       </div>
     </footer>
   </div>
