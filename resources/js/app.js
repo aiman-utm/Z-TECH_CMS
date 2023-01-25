@@ -3,5 +3,3 @@ if (document.getElementById('toggle-menu')) {
         document.getElementById('menu').style.display = document.getElementById('menu').style.display === 'block' ? 'none' : 'block';
     };
 }
-
-// Your application logic here

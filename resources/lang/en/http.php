@@ -1,7 +1,6 @@
 <?php
 
 return [
-    // Source: https://httpstatuses.com
     '403' => [
         'title'       => '403 - Forbidden',
         'description' => 'The server understood the request but refuses to authorize it.',

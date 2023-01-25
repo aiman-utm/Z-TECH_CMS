@@ -1,13 +1,6 @@
 <?php
 
 return [
-
-    /*
-    |--------------------------------------------------------------------------
-    | English Auth Language Lines
-    |--------------------------------------------------------------------------
-    */
-
     'failed'       => 'These credentials do not match our records.',
     'login' => [
         'email'    => 'E-mail address',

@@ -18,13 +18,6 @@
                                     @error('email')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
-                                    <!-- <input id="email" type="email" class="input is-large @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
-
-                                        @error('email')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror -->
                                 </div>
 
                                 <!-- Password -->
@@ -33,24 +26,11 @@
                                     @error('password')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
-                                    <!-- <input id="password" type="password" class="input is-large @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                        @error('password')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror -->
                                 </div>
 
                                 <!-- Confirm Password -->
                                 <div class="mt-4">
                                     <input name="password_confirmation" type="password" class="input is-large" id="password_confirmation" placeholder="Confirm New Password" required >
-                                    <!-- @error('password_confirmation')
-                                        <span class="text-danger">{{ $message }}</span>
-                                    @enderror -->
-                                    <!-- <div class="col-md-6">
-                                        <input id="password-confirm" type="password" class="input is-large" name="password_confirmation" required autocomplete="new-password">
-                                    </div> -->
                                 </div>
 
                                 <div class="flex items-center justify-end mt-4">

@@ -10,7 +10,7 @@
                         <div class="mb-5">
                             {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
                         </div>
-                        
+
                         @if (session('status'))
                             <div class="alert alert-success" role="alert">
                                 {{ session('status') }}
@@ -31,12 +31,10 @@
                                 @enderror
                             </div>
                             <div class="control">
-                                <!-- <input type="hidden" name="_token" id="csrf-token" value="{{ csrf_token() }}" /> -->
                                 <button type="submit" class="button is-info is-fullwidth is-large">{{ __('Email Password Reset Link') }}</button>
-                                <!-- <button class="btn btn-success">Submit</button> -->
                             </div>
                         </form>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </div>

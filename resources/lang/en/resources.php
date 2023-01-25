@@ -1,13 +1,6 @@
 <?php
 
 return [
-
-    /*
-    |--------------------------------------------------------------------------
-    | English Application App Specific Resources
-    |--------------------------------------------------------------------------
-    */
-
     'article' => [
         'create' => 'Create article',
         'edit'   => 'Edit article',
