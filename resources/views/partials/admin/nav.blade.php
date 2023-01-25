@@ -28,17 +28,4 @@
             @include('partials.admin.nav.logout')
         </div>
     </div>
-    <div class="navbar-brand">
-        <div class="navbar-start">
-            <a class="navbar-item" href="{{ route('auth.login') }}">
-                Login
-            </a>
-            <a class="navbar-item" href="{{ route('register') }}">
-                Register
-            </a>
-            <a class="navbar-item" href="{{ route('root') }}">
-                Home
-            </a>
-        </div>
-    </div>
 </nav>
